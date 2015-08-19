@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MergeRootFrame">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        tools:context="co.fabrk.popmovies.DetailFragment">
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center_vertical"
+            android:padding="@dimen/abc_action_bar_content_inset_material"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/abc_list_item_padding_horizontal_material">
+            <ImageView
+                android:id="@+id/imageview_poster_detail_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/abc_button_padding_horizontal_material"
+                android:scaleType="fitCenter"></ImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textAlignment="center">
+                <TextView
+                    android:id="@+id/textview_release_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/abc_text_size_headline_material" />
+                <TextView
+                    android:id="@+id/textview_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/abc_text_size_subhead_material" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textview_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/abc_list_item_padding_horizontal_material"
+            android:textSize="@dimen/abc_text_size_body_1_material" />
+    </LinearLayout>
+</ScrollView>
