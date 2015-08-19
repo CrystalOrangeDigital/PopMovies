@@ -8,6 +8,7 @@
     <string name="title_activity_movie_detail">MovieDetailActivity</string>
     <string name="title_activity_detail">Movie Detail</string>
 
+    <string name="api_key"></string>
 
     <string name="sort_option_pop">popularity.desc</string>
     <string name="sort_option_rat">vote_average.desc</string>
